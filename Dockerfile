@@ -1,7 +1,7 @@
 FROM tim03/x264:last_stable
 LABEL MAINTAINER Chen, Wenli <chenwenli@chenwenli.com>
 
-ARG VER=3.3.2
+ARG VER=snapshot
 WORKDIR /usr/src/ffmpeg
 RUN \
   curl http://ffmpeg.org/releases/ffmpeg-$VER.tar.xz | tar Jxv --strip-component=1 -f -
