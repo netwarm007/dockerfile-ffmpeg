@@ -4,7 +4,7 @@ LABEL MAINTAINER Chen, Wenli <chenwenli@chenwenli.com>
 ARG VER=snapshot
 WORKDIR /usr/src/ffmpeg
 RUN \
-  curl http://ffmpeg.org/releases/ffmpeg-$VER.tar.xz | tar Jxv --strip-component=1 -f -
+  curl http://ffmpeg.org/releases/ffmpeg-$VER.tar.bz2 | tar jxv --strip-component=1 -f -
 
 RUN \
  ./configure  --prefix=/usr \
